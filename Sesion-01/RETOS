@@ -1,0 +1,63 @@
+RETO 1
+Crea un vector con los números del 1 al 500, de 10 en 10.
+Guarda este vector con el nombre mi.vector
+¿Cuál es el tamaño del vector?
+Al último elemento del vector, reemplazalo por el número -1.
+Multiplica este vector por 0.85 y sumale 10, guarda el resultado en mi.vector.transformado
+Ordena el vector mi.vector.transformado descendentemente
+
+RETO 2
+Imprime el dataframe precargado en R mtcars
+Imprime el numero de renglones y columnas del dataframe
+Imprime el nombre de las columnas del dataframe
+Imprime el dato que esta en la tercer columna, quinto renglon del dataframe
+Imprime todos los renglones de la cuarta y quinta columna
+Imprime los primeros 20 renglones de la cuarta y quinta columna
+Elimina la segunda columna del dataframe
+
+
+RETO 3
+Imprime el dataframe precargado en R mtcars
+Pide ayuda para ver la descripción del dataframe. Hint: usa ?
+Responde: ¿Cuál es el máximo de la columna cyl?
+Responde: ¿Cuál es el mínimo de la columan qsec?
+Guarda el promedio de la columna cyl en mean.cyl
+Guarda el promedio de la columna qsec en mean.qsec
+Selecciona los renglones que tengan cyl mayor al promedio (mean.cyl)
+Selecciona los rengloens que tengan cyl mayor al promedio (mean.cyl) y qsec mayor al promedio (mean.qsec)
+Guarda la última instruccion en un dataframe que tenga el nombre mtcars.filtrados
+
+RETO 4
+Imprime tu working directory
+Si es necesario, cambia la ruta a la carpeta Data
+Lee el archivo Retail_Store.csv
+Guarda el nuevo dataframe como dataframe.retail
+
+RETO 5
+Crea una función que reciba de argumento un nombre y devuelve 'Bienvenido -nombre', ponle a la función el nombre de welcome
+Pruebala con tu nombre
+Pide ayuda con la función readline, es decir corre ?readline
+Explica que hace el siguiente código:
+nombre <- readline(prompt = '¿Cuál es tu nombre?')
+welcome(nombre)
+Modifica tu función welcome para que, además de nombre, pida edad. Ahora, debera regresar 'Bienvenido -nombre- con -edad- años'. Esta nueva función se debe llamar welcome.2
+
+RETO 6
+Lee el archivo Metro_Interstate_Traffic_Volume.csv
+Ve la estructura del dataframe
+¿Cuáles son los niveles de la columna weather_main?
+Reordena los niveles alfabéticamente
+Agrega una columna llamada weather_main_ordered al dataframe, donde los niveles estén ordenados
+
+RETO 7
+Haz un llamado a la libreria dplyr
+Lee el archivo Metro_Interstate_Traffic_Volume.csv y guardalo en df.traffic
+Ve la estructura del dataframe y los tipos de dato de cada columna
+Calcula el promedio de la columna traffic_volume y guardala en mean.traffic
+Selecciona solo las columnas weather_main y traffic_volume
+Cambia de nombre las columnas: weather_main a clima y traffic_volume a trafico
+Filtra a las observaciones donde la columna trafico sea mayor o igual a mean.traffic
+Guarda el dataframe filtrado como df.traffic.filter
+¿Cuántos renglones y columnas tiene df.traffic.filter?
+Con df.traffic.filter, agrupa por clima y saca el min de trafico y max de trafico, guardalo en df.traffic.grouped
+Agrega una columna a df.traffic.grouped que sea la diferencia entre max y min del grupo
