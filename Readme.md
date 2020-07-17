@@ -1,20 +1,52 @@
- 
-## Módulo: Programación y Estadística con R
+[`Estadística y Programación con R`](../Readme.md) > [`Estadística I`] > [`Sesion-05`] 
 
-### OBJETIVO
+## Work: Análisis Exploratorio de Datos - Análisis Univariado
 
- - El conocimiento que adquirirás en este módulo tendrá como dos pilares el lenguaje de programación R y estadística básica. Utilizando estos dos conocimientos, podrás desarrollar un análisis estádistico de alto nivel sobre cualquier conjunto de datos que se te presente.
- - Ser capaces de generar análisis estadísticos ó predictivos, consumiendo datos de bases de datos en la nube, compartiendo los resultados mediante dashboards en una aplicación Web (https://shiny.rstudio.com/) de autoría propia.
+### OBJETIVO A
+- Identificar si un dataframe tiene valores nulos.
+- Encontrar las medidas de centralidad, dispersión y distribución de un dataframe.  
+- Identificar los tipos de datos de un dataframe y filtrar a categóricos.  
+- Construir una tabla de frecuencias.  
 
- ### ORGANIZACIÓN DE MÓDULO 
- 
- - [Sesión 1](Sesion-01): Curso propedéutico introducción a R.
- - [Sesión 2](Sesion-02): Programación: Funciones, Loops y Condiciones en R  
- - [Sesión 3](Sesion-03): Utilización de Scripts en R con aplicación al análisis de datos desde archivos.  
- - [Sesión 4](Sesion-04): Integración de R con Bases de Datos MySQL, (MariaDB) y datos de dominio público (URL).  
- - [Sesión 5](Sesion-05): Estadística I. Análisis Exploratorio de datos: Análisis univariado y multivariado. 
- - [Sesión 6](Sesion-06): Estadística II. Distribuciónes muestral y paramétricas
- - [Sesión 7](Sesion-07): Modelado Matemático: Regresión y Predicción.  
- - [Sesión 8](Sesion-08): Gráficos Avanzados, Dashboards con R y Shiny. 
+#### ORGANIZACION DE LA CLASE 
 
+- Medidas de Centralidad
+	- [Ejemplo 01](Ejemplo-01)
 
+- Medidas de Dispersión
+	- [Ejemplo 02](Ejemplo-02)
+	- [Reto 01](Reto-01)
+
+- Medidas de Distribución
+	- [Ejemplo 03](Ejemplo-03)
+	- [Reto 02](Reto-02)
+
+- Tabla de Frecuencias
+	- [Ejemplo 04](Ejemplo-04)
+	- [Reto 03](Reto-03)
+
+## Work: Análisis Exploratorio de Datos - Análisis Multivariado
+
+### OBJETIVO B
+- Encontrar relaciones entre variables
+- Crear visualizaciones: HeatMaps, Histogramas, Densidades, ScatterPlots y Binning Hexagonal
+
+#### ORGANIZACION DE LA CLASE 
+
+- Matriz de Correlación y HeatMaps
+	- [Ejemplo 05](Ejemplo-05)
+	- [Reto 04](Reto-04)
+
+- Histograma y Densidad
+	- [Ejemplo 06](Ejemplo-06)
+	- [Reto 05](Reto-05)
+
+- ScatterPlots y Binning Hexagonal
+	- [Ejemplo 07](Ejemplo-07)
+	- [Reto 06](Reto-06)
+	
+- Postwork
+	- [Postwork](Postwork)
+
+- Planteamiento del Proyecto Final
+	- [ProyectoFinal](ProyectoFinala)
