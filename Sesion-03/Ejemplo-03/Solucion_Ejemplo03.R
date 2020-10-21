@@ -4,12 +4,13 @@
 ##########  Ejemplo 03    ##########
 ######################################
 
-# Para ver la ruta de dónde estamos trabajando
-getwd()
 
 telegram <- function(...){
   paste("START",...,"STOP")
 }
+
+telegram(" Good "," morning ")
+telegram(c(" Good "," morning "))
 
 mad_libs <- function(...){
   
@@ -18,8 +19,11 @@ mad_libs <- function(...){
   adjective  <- args[[2]]
   noun  <- args[[3]]
  
-  paste("News from", place, "today where", adjective, "students took to the streets in protest of the new", noun, "being installed on campus.")
-}
+  paste("News from", place, "today where", adjective,
+        "students took to the streets in protest of the new", 
+        noun, "being installed on campus.")
+  }
+
 mad_libs("mad","as","it can be") # por ejemplo
 
 "%p%" <- function(arg1,arg2){ 
@@ -28,12 +32,16 @@ mad_libs("mad","as","it can be") # por ejemplo
 
 "I" %p% "love" %p% "R!"
 
+
+# Crear un operador que tome dos números, multiplique y sume 1
+
+
+
+
 "%mult_add_one%" <- function(izquierda, derecha){
   #¡Observe las dobles comillas! 
   izquierda * derecha + 1
   }
 4 %mult_add_one% 5
-
-
 
 
