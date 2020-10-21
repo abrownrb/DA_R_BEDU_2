@@ -4,7 +4,7 @@ getwd()
 
 # Para bajar dos niveles del directorio de trabajo 
 # utilizamos ../.. y para accesar a una nueva carpeta ponemos su nombre, Data
-setwd('../../Data')
+setwd('/Users/aliciabrown/Documents/BEDU/A2-Estadistica-Programacion-con-R-2020-master/Data/')
 
 # Vemos la ruta cambiada
 getwd()

@@ -2,13 +2,14 @@
 library(ggplot2)
 
 # Leemos dataframe
-breast.cancer <- read.csv('breast_cancer.csv')
+breast.cancer <- read.csv('/Users/aliciabrown/Documents/BEDU/A2-Estadistica-Programacion-con-R-2020-master/Data/breast_cancer.csv')
 
 # Vemos la estructura del dataframe
 str(breast.cancer)
 
 # Seleccionamos columnas de interes
-breast.cancer.short <- breast.cancer[,c('diagnosis','radius_mean','texture_mean','perimeter_mean','area_mean')]
+breast.cancer.short <- breast.cancer[,c('diagnosis','radius_mean',
+                                        'texture_mean','perimeter_mean','area_mean')]
 
 # Obtenemos la media de la variable radius_mean
 media.radius <- mean(breast.cancer.short$radius_mean)
@@ -17,11 +18,12 @@ media.radius <- mean(breast.cancer.short$radius_mean)
 ggplot(breast.cancer.short, aes(radius_mean)) + 
   geom_histogram(colour = 'black', 
                  fill = 'blue',
-                 alpha = 0.6,
-                 binwidth = 0.3) + 
+                 alpha = 0.1,
+                 binwidth = 0.2) + 
   geom_density(aes(y = 0.3*..count..))+
-  geom_vline(xintercept=media.radius, linetype="dashed", color = "red") + 
-  ggtitle('Histogram for Radius Mean') + 
+  geom_vline(xintercept=media.radius, linetype="dashed", 
+             color = "red")  +
+  ggtitle('Histogram for Radius Mean') +
   labs(x = 'Radius Mean', y = 'Freq')+
   theme_minimal() +
   theme(plot.title = element_text(hjust = 0.5, size = 15))  
@@ -32,7 +34,8 @@ ggplot(breast.cancer.short, aes(radius_mean)) +
                  colour = 'black', 
                  fill = 'blue',
                  alpha = 0.6) + 
-  geom_vline(xintercept=media.radius, linetype="dashed", color = "red") + 
+  geom_vline(xintercept=media.radius, linetype="dashed", 
+             color = "red") + 
   ggtitle('Histogram for Radius Mean') + 
   labs(x = 'Radius Mean', y = 'Freq')+
   theme_minimal() +

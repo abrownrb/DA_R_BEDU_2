@@ -14,6 +14,8 @@ breast.cancer.num <- breast.cancer[,-c(1,2,3)]
 
 # Calculamos la matriz de correlación y le damos formato para graficar
 cor.df <- reshape2::melt(cor(breast.cancer.num))
+# a <- cor(breast.cancer.num)
+# gather, spread
 
 # Creamos gráfico para visualizar matriz de correlación
 cor.df %>% ggplot(aes(Var1,Var2)) + 

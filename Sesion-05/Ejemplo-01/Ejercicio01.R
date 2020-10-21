@@ -60,3 +60,5 @@ max.table.col <- max(table.col)
 mode.col <- table.col[table.col == max.table.col]
 print(paste('Moda:', names(mode.col)))
 
+
+

@@ -4,13 +4,13 @@ getwd()
 
 # Para bajar dos niveles del directorio de trabajo 
 # utilizamos ../.. y para accesar a una nueva carpeta ponemos su nombre, Data
-setwd('../../Data')
+setwd('/Users/aliciabrown/Documents/BEDU/A2-Estadistica-Programacion-con-R-2020-master/Data/')
 
 # Vemos la ruta cambiada
 getwd()
 
 # Leemos dataframe
-breast.cancer <- read.csv('C:/Users/AnaLuisaOrtegaRenter/Downloads/wdbc.data', header = FALSE)
+breast.cancer <- read.csv('wdbc.data', header = FALSE)
 
 # Cambiamos nombre de las columnas
 names(breast.cancer) <- c('id','diagnosis','radius_mean',
