@@ -7,17 +7,19 @@ data.frame(valores = x) %>%
   ggplot(aes(x = valores)) + 
   geom_histogram(bins = 100, 
                  fill = 'blue',
-                 alpha= 0.6, 
+                 alpha= 0.2, 
                  color = 'black') + 
   scale_x_continuous(breaks = seq(0,1,0.1), lim = c(0,1)) +
   ggtitle('Simulación de 100,000 valores con dist Uniforme')
 
-
+# runif/rnorm - simular las dist. n veces
+# punif/pnorm - d. acumulada
+# d,p,rbinom
 
 # Distribucion Normal
 
 # Leemos el archivo csv con alturas de 100 personas en UK 
-height <- read.csv("height.csv")
+height <- read.csv("/Users/aliciabrown/Documents/BEDU/A2-Estadistica-Programacion-con-R-2020-master/Sesion-06/Ejemplo-05/height.csv")
 mean.height <- mean(height$height)
 std.height <- sd(height$height)
 

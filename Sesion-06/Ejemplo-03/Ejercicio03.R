@@ -1,5 +1,6 @@
 # Distribución Bernoulli
 
+set.seed(5)
 # Una moneda justa (p=0.5)
 ones <- 0
 zeros <- 0
@@ -11,6 +12,7 @@ for (k in 1:100) {
   } else{zeros = zeros + 1}
   print(z)
 }
+
 
 print(ones)
 print(zeros)

@@ -1,0 +1,80 @@
+ESTADÍSTICA Y PROGRAMACIÓN CON R
+Octubre 2020
+
+https://cran.r-project.org/web/packages/DataExplorer/DataExplorer.pdf
+
+Sesión 5 y 6: Base Teoría Estadísitica + Análisis Exploratorio
+	Prework/Work:
+	- Boom de datos
+			Muchas fuentes: web,transacciones, M2M, biométricos, human
+			BigData: variados, complejidad, velocidad, estructurados(indiv-caract, o no)/formato, gobernabilidad (acceso, seguridad, arquitectura-flujo-sistema gestión, auditoría, calidad)
+			Físicos vs conceptuales vs lógicos
+	** - Proceso de análisis: Datos-> Transformación de acuerdo a necesidades + apriori -> Info -> Conocimiento -> Oportunidades/Decisiones/Retroalimentación/Estrategias/Conclusiones
+
+	** - EDA. ¿Con qué estamos trabajando: str, contenido, contexto-naturaleza, posibles relaciones/dependencias? No contestar, sino mejorar la pregunta. Evidencia o guís.
+	** - Pregunta/Hipótesis, datos, procesar/organizar, analizar, modelos algoritmos, visualización, resultados, decisión, evaluar.
+	
+	** - Tendencia, patrones, variabilidad, frecuencia, ciclos, estaciones, convergencia, aleatoriedad, uniforme.
+	** - Explorar, describir, entender, hipótesis, medir-modelar, optimizar/ajustar/predecir(valor, métrica), agrupar, asociar, ordenar.
+	** - Minería, BI/BA, AI, ML (Regresión)
+
+Hasta este momento ya entendimos qué datos tenemos, cómo están formados y vimos estadísticas básicas de cómo se comportan de forma independiente las variables. 
+
+Visualización como forma de análisis multivariado, sustento (no prueba) de hipótesis, exploración y presentación de resultados. 
+
+Histograma, Gráfica de Barras, Scatter Plot, Boxplot, Binning hexagonal, Heat Map, Gráfica de correlación, Density plot, Piechart
+
+    ** - Visualización: resultados rápidos, orgenafos y que transmiten conocimiento, enriquece el análisis.
+
+
+    ** - Storytelling: relevancia, discusión, informal, descriptivo, conciso, relatable, anecdótico, sustento, profesional, hilación.
+    ** - Datos, estética, geometrías y facetas/capas.
+
+	- Retos
+	Nulos-Outliers
+	Medidas de Centralidad
+		Lee el archivo Metro_Interstate_Traffic_Volume.csv
+		Ve la estructura de tu dataframe
+		Cuenta el número de NaNs en tu dataframe, en caso de haber elimina los renglones que tienen NaN
+		Selecciona 3 columnas numéricas de tu preferencia
+		Encuentra la media y mediana para cada variable que seleccionaste
+		Encuentra la moda para una variable
+		Para la misma variable, encuentra varianza, desviación estándar y rando
+
+	Medidas de Distribución / Densidad
+		Lee el archivo Metro_Interstate_Traffic_Volume
+		Ve los primeros 6 renglones del dataframe
+		Selecciona las columnas traffic_volume y temp
+		Encuentra los deciles de la variable temp
+		Utiliza la función cut para agregar una nueva columna al dataframe que diga en que rango de los deciles está cada valor
+		Ve los primeros 6 renglones del dataframe al que agregaste una columna
+		Utiliza table para ver cuantos elementos cayeron en cada grupo
+
+	Tabla de Frecuencias
+		Lee el archivo Metro_Interstate_Traffic_Volume
+		Encuentra todas las columnas que son de tipo factor
+		Crea un dataframe solamente con las columnas tipo factor
+		Utiliza table para ver las proporciones de la variable weather_main
+
+	** - Matriz de Correlación y HeatMaps
+		Lee el archivo **Metro_Interstate_Traffic_Volume.csv**.
+		Encuentra la matriz de correlación de las variabes numéricas continuas `'temp','rain_1h','snow_1h','clouds_all','traffic_volume'`.
+		Crea una visualización en dónde las correlaciones más fuertes tengan color negro y las correlaciones más débiles tengan color blanco
+		Viendo la gráfica que creaste o la matriz de correlación, responde: ¿Cuáles son las dos variables más correlacionadas? ¿La correlación es positiva o negativa?
+
+	** - Histograma y Densidad 
+		Lee el archivo **`Metro_Interstate_Traffic_Volume.csv`**
+		Ve la estructura del dataframe
+		¿Cuáles son los niveles de la columna weather_main?
+		Crea un histograma para la variable traffic_volume
+		Agrega formato al histograma: titulo, nombre a los ejes, color amarillo
+		Utiliza facet_wrap con la variable weather_main para separar los histogramas por tipo de clima
+
+	** - ScatterPlots y Binning Hexagonal
+		Lee el archivo **`Metro_Interstate_Traffic_Volume.csv`**
+		Ve los nombres de las columnas del dataframe
+		Selecciona las dos columnas con mayor correlación (Las encontraste en el Reto-01)
+		Crea un ScatterPlot de estas dos variables, además agrega color por tipo de clima. 
+		Al scatterplot, agregale una capa con `xlim(200,325)`, ¿qué pasa?
+		Crea un Binning Hexagonal de estas dos variables
+		Responde: ¿Que insigths encuentras?

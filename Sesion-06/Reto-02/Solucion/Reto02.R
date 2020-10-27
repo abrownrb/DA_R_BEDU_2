@@ -2,7 +2,7 @@ library(ggplot2)
 library(tidyr)
 traffic.df <- read.csv('/Users/aliciabrown/Documents/BEDU/A2-Estadistica-Programacion-con-R-2020-master/Data/Metro_Interstate_Traffic_Volume.csv')
 nrow.df <- nrow(traffic.df)
-idx.sample <- sample(nrow(traffic.df), size = as.integer(nrow.df*0.3))
+idx.sample <- sample(nrow(traffic.df), size = as.integer(nrow.df*0.5))
 sample.df <- traffic.df[idx.sample,]
 
 str(sample.df)

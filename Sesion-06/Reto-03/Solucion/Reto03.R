@@ -27,6 +27,6 @@ ggplot(samp_mean, aes(x = temp)) +
   geom_histogram(bins = 40) +
   geom_vline(xintercept = mean.temp, color = 'red')+
   theme_minimal() +
-  ggtitle('Distribuci?n de la media con diferentes tama?os de muestra') +
+  ggtitle('Distribución de la media con diferentes tamaños de muestra') +
   facet_grid('type')
 

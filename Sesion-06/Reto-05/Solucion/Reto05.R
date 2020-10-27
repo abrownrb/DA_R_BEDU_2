@@ -1,4 +1,4 @@
-x = seq(1,10,by=1)
+x = seq(1,100,by=1)
 
 dbinom(x = x, size = length(x), prob = 0.5)
 
